@@ -8,7 +8,7 @@ const Page = async () => {
   const queryClient = getQueryClient();
   void queryClient.prefetchQuery(
     trpc.hello.queryOptions({ text: 'client' })
-  )
+  ) 
 
   return (
     <div className='min-h-screen w-full flex items-center justify-center'>
